@@ -113,10 +113,128 @@ section {
   text-align: center;
 }
 .hero h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--primaryColor);
 }
+.heading {
+  font-size: 30px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*---------about-------------*/
+.about .primaryBtn {
+  margin-left: 20px;
+}
+.about .heading {
+  text-align: left;
+  margin: 0;
+}
+.left {
+  width: 35%;
+}
+.right {
+  width: 65%;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/*---------services-------------*/
+.services .box {
+  background-color: var(--primaryBackground);
+  padding: 35px;
+}
+.services i {
+  color: var(--primaryColor);
+}
+.services h3 {
+  margin-top: 20px;
+}
+/*---------services-------------*/
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+  height: 50vh;
+  place-items: center;
+  text-align: center;
+}
+
+/*---------counter-------------*/
+.counter {
+  margin-top: 240px;
+  position: relative;
+}
+.hero.counter::after {
+  background-image: url("../public/images/some-facts-bg.png");
+  height: 50vh;
+}
+.counter h1 {
+  margin: 0;
+}
+/*---------counter-------------*/
+
+/* portifolio */
+
+article {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+article img {
+  width: 100%;
+  height: 100%;
+}
+article .box {
+  position: relative;
+  transition: 0.5s;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 2;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryColor);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+article .box:hover .overlay::after,
+article .box:hover .overlay {
+  opacity: 1;
+}
+.catButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.catButton button {
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+/* portifolio */
+
 @media screen  and (max-width: 768px){
   /* header */
   header .nav {
@@ -141,11 +259,6 @@ section {
     width: 100%;
     background-color: var(--headingColor);
   }
-  /* header */
-
-  /* hero */
- 
-
-  /* hero */
+  
 }
 

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="hero">
       {home.map((val, i) => (
-        <div className="heroContainer">
+        <div className="heroContent">
           <h3>{val.text}</h3>
           <h1>
             <Typewriter
@@ -18,7 +18,7 @@ const Hero = () => {
             />
           </h1>
           <p>{val.desc}</p>
-          <button className="primaryButton">Download CV</button>
+          <button className="primaryBtn">Book Consultation</button>
         </div>
       ))}
     </section>

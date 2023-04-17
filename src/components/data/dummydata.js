@@ -54,53 +54,53 @@ export const home = [
     name: "FINESTAT DATA SOLUTIONS",
     post: "RESEARCHERS",
     design: "DATA ANALYSTS",
-    desc: "Qualified expertsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    desc: "A professional services firm providing practical and innovative solutions to individuals,businesses and corporates in designing of experiments and sample survey, Scripting for online and offline data collection and advanced analysis.",
   },
 ];
 export const about = [
   {
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur",
+    desc: "We are a professional services firm providing practical and innovative solutions to individuals,businesses and corporates in designing of experiments and sample survey, Scripting for online and offline data collection and advanced analysis.",
     desc1:
-      "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor si voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur",
-    cover: "./images/man.png",
+      "Our business model involves working closely with entrepreneurs to develop transformational strategies that are radical, innovative, cost-effective and action-oriented based on four basic principles.",
+    cover: "../src/images/data.jpg",
   },
 ];
 export const services = [
   {
     id: 1,
-    icon: <Settings />,
-    title: "Creative Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <BarChart />,
+    title: "Design & Analysis",
+    desc: "Design and Analysis of Sample Surveys (DASS): We have extensive experience in designing and analyzing experiments and sample surveys. Our team of experts in pure and social sciences bring together their knowledge and skills to design effective sample designs that help unleash statistical power in practice. ",
   },
   {
     id: 2,
     icon: <CropRotate />,
-    title: "Clean Code",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    title: "Scripting",
+    desc: "Scripting for Online and Offline Data Collection (SOODC): We have programming experts and technologists who helps our clients to design and deploy their data collection tools using mobile gadgets. We help our clients to conduct real-time data collection from the field. ",
   },
   {
     id: 3,
-    icon: <ViewInAr />,
-    title: "Responsive Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <PieChart />,
+    title: "Advanced Analysis",
+    desc: "Advanced Analysis (AA): We use a variety of big data management and analytics tools and techniques to clean, code, analyze data and present results. We help our clients to understand patterns and concepts from their data as a benchmark for decision making.",
   },
   {
     id: 4,
     icon: <PieChart />,
-    title: "Material UI	",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    title: "Research Report Writing",
+    desc: "Advanced Analysis (AA): We use a variety of big data management and analytics tools and techniques to clean, code, analyze data and present results. We help our clients to understand patterns and concepts from their data as a benchmark for decision making.",
   },
   {
     id: 5,
-    icon: <Code />,
-    title: "Material UI Icons",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <PieChart />,
+    title: "Research",
+    desc: "Advertising Research, Business Strategy Research, Competitive Analysis ,Market Research, Product Research, Publishing Support, Social Media Research",
   },
   {
     id: 6,
-    icon: <BarChart />,
-    title: "Awesome Support",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <PieChart />,
+    title: "Grand Proposal Writing",
+    desc: "Advanced Analysis (AA): We use a variety of big data management and analytics tools and techniques to clean, code, analyze data and present results. We help our clients to understand patterns and concepts from their data as a benchmark for decision making.",
   },
 ];
 export const project = [
@@ -113,20 +113,20 @@ export const project = [
   {
     id: 2,
     icon: <FavoriteBorder />,
-    num: "231",
-    title: "PROJECTS COMPLEATED",
+    num: "21",
+    title: "PROJECTS COMPLETED",
   },
   {
     id: 3,
     icon: <Public />,
-    num: "108",
-    title: "FILES DOWNLOADED",
+    num: "8",
+    title: "ONGOING PROJECTS",
   },
   {
     id: 4,
     icon: <PersonOutlined />,
-    num: "1446",
-    title: "LIENS OF CODE",
+    num: "10",
+    title: "EMPLOYEES",
   },
 ];
 export const portfolio = [
