@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import Services from "../pages/Services";
 import Counter from "../pages/Counter";
 import Portfolio from "../pages/Portfolio";
+import Contact from "../pages/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       <Counter />
       <Portfolio />
+      <Contact />
     </div>
   );
 }

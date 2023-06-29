@@ -11,7 +11,7 @@ const Portfolio = () => {
       <article>
         <div className="container">
           <Heading title="Portfolio" />
-          <div className="catButton">text </div>
+          <div className="catButton">Some of Our Clients </div>
 
           <div className="content grid3">
             {list.map((item) => (
