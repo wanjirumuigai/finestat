@@ -16,6 +16,7 @@ import {
   Twitter,
   Instagram,
   YouTube,
+  LinkedIn,
 } from "@mui/icons-material";
 
 export const navlink = [
@@ -242,8 +243,8 @@ export const contact = [
 ];
 export const social = [
   {
-    icon: <Facebook />,
-    url: "https://www.linkedin.com/in/pauline-muigai-545530ab/",
+    icon: <LinkedIn />,
+    url: "https://www.linkedin.com/company/finestat-data-solutions-limited/?originalSubdomain=ke",
   },
   {
     icon: <Twitter />,
