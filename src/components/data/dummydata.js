@@ -226,23 +226,24 @@ export const blog = [
 export const contact = [
   {
     icon: <AddLocationAltOutlined />,
-    text1: "2651 Main Street, Suit 124",
-    text2: "Seattle, WA, 98101",
+    text1: "Ruaraka",
+    text2: "P.O Box 60344-00100, Nairobi",
   },
   {
     icon: <PhoneIphone />,
-    text1: "0123456789",
-    text2: "0345627891",
+    text1: "+254 745 082391",
+    text2: "+254 704 600088",
   },
   {
     icon: <EmailOutlined />,
-    text1: "hello@thetheme.io",
-    text2: "inf0@brex-theme.io",
+    text1: "info@finestat.com",
+    text2: "www.finestat.com",
   },
 ];
 export const social = [
   {
     icon: <Facebook />,
+    url: "https://www.linkedin.com/in/pauline-muigai-545530ab/",
   },
   {
     icon: <Twitter />,

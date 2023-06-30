@@ -40,7 +40,7 @@ p{
 .flexsb {
   display: flex;
   justify-content: space-between;
-  
+
 }
 header {
   background-color: var(--headingColor);
@@ -59,7 +59,7 @@ header a{
 .nav ul li {
   list-style-type: none;
   display: inline-block;
-  
+
 }
 .primaryButton {
   background: none;
@@ -87,7 +87,7 @@ section {
   height: 90vh;
   display: flex;
   align-items: center;
-  
+
 }
 .flex {
   display: flex;
@@ -146,9 +146,13 @@ section {
 }
 
 /*---------services-------------*/
+.services {
+  height: max-content;
+}
 .services .box {
   background-color: var(--primaryBackground);
   padding: 35px;
+
 }
 .services i {
   color: var(--primaryColor);
@@ -235,6 +239,44 @@ article .box:hover .overlay {
 }
 /* portifolio */
 
+/* contact */
+.contact {
+  margin: 20px 0;
+}
+.contact .right, .contact .left {
+  padding: 20px;
+
+
+}
+.contact .flex input:nth-child(1) {
+  margin-right: 10px;
+
+}
+.contact button,
+.contact textarea,
+.contact input
+{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 5px;
+
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: var(--primaryBackground);
+  padding: 70px;
+  margin-top: 50px;
+}
+footer i {
+  margin: 5px;
+  color: var(--primaryColor);
+}
 @media screen  and (max-width: 768px){
   /* header */
   header .nav {
@@ -259,6 +301,39 @@ article .box:hover .overlay {
     width: 100%;
     background-color: var(--headingColor);
   }
-  
+  .hero {
+    height: max-content;
+
+  }
+  .heroContainer {
+    max-width: 80%;
+  }
+  /* .hero::after {
+    height: max-content;
+
+  } */
+  .primaryBtn {
+    font-size: 14px;
+    padding: 10px;
+  }
+  section {
+    height: auto;
+    padding-top: 50px;
+  }
+  .contact .flexsb, .about .flex {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .grid3, .grid4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer  {
+
+    margin-top: 10px;
+
+  }
+
 }
 
