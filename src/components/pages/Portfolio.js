@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <>
       <article>
-        <div className="container">
+        <div className="container" id="portifolio">
           <Heading title="Portfolio" />
           <div className="catButton">Some of Our Clients </div>
 

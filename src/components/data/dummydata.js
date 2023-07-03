@@ -151,14 +151,15 @@ export const portfolio = [
     cover: "../images/port/port4.jpg",
     name: "Client 3",
     category: "Research",
-    title: "Students' Research",
+
+    title: "Special Needs and Disabilities",
   },
   {
     id: 4,
     cover: "../images/port/port3.jpg",
     name: "Client 4",
     category: "development",
-    title: "Special Needs and Disabilities",
+    title: "Students' Research",
   },
   {
     id: 5,

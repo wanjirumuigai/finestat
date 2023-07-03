@@ -35,12 +35,32 @@ const Contact = () => {
             <div className="right">
               <form ref={form} onSubmit={sendEmail}>
                 <div className="flex">
-                  <input type="text" name="user_name" placeholder="Name" />
-                  <input type="email" name="user_email" placeholder="Email" />
+                  <input
+                    type="text"
+                    name="user_name"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="user_email"
+                    placeholder="Email"
+                    required
+                  />
                 </div>
-                <input type="tel" name="phone" placeholder="Mobile No." />
-                <input type="text" placeholder="Subject" />
-                <textarea name="message" cols="30" rows="10"></textarea>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Mobile No."
+                  required
+                />
+                <input type="text" placeholder="Subject" required />
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
                 <button>Submit</button>
               </form>
             </div>
