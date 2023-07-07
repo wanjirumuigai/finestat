@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Heading from "../common/Heading";
 import { contact } from "../data/dummydata";
 
@@ -7,15 +7,23 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const form = useRef();
 
+  const [formData, setContact] = useState({
+    user_name: "",
+    user_email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_rysm5kb",
-        "template_v92qrp9",
+        "service_lo8legp",
+        "template_dc3ecqk",
         form.current,
-        "dUiFIP5aarRV0h-6h"
+        "EPkfjXhokXiFqDzqy"
       )
       .then(
         (result) => {
@@ -25,7 +33,17 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    setContact({
+      user_name: "",
+      user_email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
   };
+  function handleFormChange(e) {
+    setContact({ ...formData, [e.target.name]: e.target.value });
+  }
   return (
     <>
       <div className="contact">
@@ -39,12 +57,16 @@ const Contact = () => {
                     type="text"
                     name="user_name"
                     placeholder="Name"
+                    value={formData.user_name}
                     required
+                    onChange={(e) => handleFormChange(e)}
                   />
                   <input
                     type="email"
                     name="user_email"
                     placeholder="Email"
+                    value={formData.user_email}
+                    onChange={(e) => handleFormChange(e)}
                     required
                   />
                 </div>
@@ -53,13 +75,24 @@ const Contact = () => {
                   name="phone"
                   placeholder="Mobile No."
                   required
+                  value={formData.phone}
+                  onChange={(e) => handleFormChange(e)}
                 />
-                <input type="text" placeholder="Subject" required />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  required
+                  value={formData.subject}
+                  onChange={(e) => handleFormChange(e)}
+                />
                 <textarea
                   name="message"
                   cols="30"
                   rows="10"
                   required
+                  value={formData.message}
+                  onChange={(e) => handleFormChange(e)}
                 ></textarea>
                 <button>Submit</button>
               </form>
