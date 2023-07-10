@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { home } from "../data/dummydata";
 import Typewriter from "typewriter-effect";
+import Contact from "../pages/Contact";
+import { useHistory } from "react-router-dom";
 
 const Hero = () => {
+  const history = useHistory();
+  function handleConsultation() {
+    history.push("/contact");
+  }
+
   return (
     <section className="hero">
       {home.map((val, i) => (
@@ -18,7 +25,9 @@ const Hero = () => {
             />
           </h1>
           <p>{val.desc}</p>
-          <button className="primaryBtn">Book Consultation</button>
+          <button className="primaryBtn" onClick={handleConsultation}>
+            Book Consultation
+          </button>
         </div>
       ))}
     </section>
