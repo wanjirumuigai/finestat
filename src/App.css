@@ -100,7 +100,8 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../src/images/data.jpg");
+  /* background-image: url("../src/images/data.jpg"); */
+  background-color: var(--black);
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
